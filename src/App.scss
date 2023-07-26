@@ -1,0 +1,83 @@
+.app {
+    max-width: 1200px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.form-wrap {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 50%;
+}
+
+.table-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background-color: bisque;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background-color: beige;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    border: 1px solid black;
+    td,
+    th {
+        padding: 20px 40px;
+    }
+}
+
+table td,
+table th {
+    border: 1px solid black;
+}
+
+.alert-add {
+    text-align: center;
+    color: green;
+}
+
+.alert-error {
+    color: red;
+}
+
+.alert-wrapper {
+    height: 30px;
+    position: relative;
+    .alert-error {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
